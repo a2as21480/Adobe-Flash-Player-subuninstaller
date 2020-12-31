@@ -1,13 +1,13 @@
 @echo off
-title Adobe Flash Player ÀÜÇØ Á¦°Å±â
+title Adobe Flash Player subunistaller ko_KR
 
 :main
 cls
-echo °ü¸®ÀÚ ±ÇÇÑÀ¸·Î ½ÇÇàÇØ ÁÖ¼¼¿ä!
-echo Adobe Flash Player ÀÜÇØ¸¦ »èÁ¦ ÇÕ´Ï´Ù °è¼Ó ÇÏ½Ã°Ú½À´Ï±î?
+echo ê´€ë¦¬ìž ê¶Œí•œìœ¼ë¡œ ì‹¤í–‰í•´ ì£¼ì„¸ìš”!
+echo Adobe Flash Player ìž”í•´ë¥¼ ì‚­ì œ í•©ë‹ˆë‹¤ ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ?
 echo.
 
-set /p a=ÁøÇàÇÏ½Ã·Á¸é y¸¦ Á¾·á¸¦ ¿øÇÏ½Ã¸é nÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.(±×³É ´Ý¾Æµµ µÇ±ä ÇÕ´Ï´Ù..) 
+set /p a=ì§„í–‰í•˜ì‹œë ¤ë©´ yë¥¼ ì¢…ë£Œë¥¼ ì›í•˜ì‹œë©´ nì„ ìž…ë ¥í•´ì£¼ì„¸ìš”.(ê·¸ëƒ¥ ë‹«ì•„ë„ ë˜ê¸´ í•©ë‹ˆë‹¤..) 
 if %a%==y goto excution
 if %a%==n goto deny
 
@@ -15,7 +15,7 @@ if %a%==n goto deny
 goto exit
 
 :excution
-print ÆÄÀÏ »èÁ¦¸¦ À§ÇÑ ±ÇÇÑÀ» ÃëµæÇÕ´Ï´Ù.
+print íŒŒì¼ ì‚­ì œë¥¼ ìœ„í•œ ê¶Œí•œì„ ì·¨ë“í•©ë‹ˆë‹¤.
 timeout /t 1 < nul
 takeown.exe /f C:\Windows\system32\Macromed\Flash /R /D Y
 takeown.exe /f C:\Windows\SysWOW64\Macromed\Flash /R /D Y
@@ -23,11 +23,11 @@ takeown.exe /f C:"%appdata%\Adobe\Flash Player" /R /D Y
 takeown.exe /f C:"%appdata%\Macromedia\Flash Player" /R /D Y
 timeout /t 1 <nul
 
-print ±ÇÇÑÀ» ÃëµæÇÑ ÆÄÀÏÀ» »èÁ¦ÇÕ´Ï´Ù.
+print ê¶Œí•œì„ ì·¨ë“í•œ íŒŒì¼ì„ ì‚­ì œí•©ë‹ˆë‹¤.
 timeout /t 1 <nul
 del /S /Q "C:\Windows\system32\Macromed\Flash" * "C:\Windows\SysWOW64\Macromed\Flash" * "C:"%appdata%\Adobe\Flash Player"" * "C:"%appdata%\Macromedia\Flash Player""
 
-print »èÁ¦°¡ ¿Ï·á µÇ¾ú½À´Ï´Ù. ¾Æ¹« Å°³ª ´©¸£½Ã¸é Á¾·áµË´Ï´Ù.(±×³É ´Ý¾Æµµ µÇ±ä ÇÕ´Ï´Ù..)
+print ì‚­ì œê°€ ì™„ë£Œ ë˜ì—ˆìŠµë‹ˆë‹¤. ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì‹œë©´ ì¢…ë£Œë©ë‹ˆë‹¤.(ê·¸ëƒ¥ ë‹«ì•„ë„ ë˜ê¸´ í•©ë‹ˆë‹¤..)
 pause
 
 
