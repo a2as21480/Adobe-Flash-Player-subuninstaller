@@ -1,0 +1,4 @@
+C:\Windows\system32\Macromed\Flash
+C:\Windows\SysWOW64\Macromed\Flash
+%appdata%\Adobe\Flash Player
+%appdata%\Macromedia\Flash Player
