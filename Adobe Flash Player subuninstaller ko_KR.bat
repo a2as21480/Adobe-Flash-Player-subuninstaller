@@ -1,5 +1,5 @@
 @echo off
-title Adobe Flash Player subunistaller ko_KR
+title Adobe Flash Player subuninstaller
 
 :main
 cls
@@ -15,7 +15,9 @@ if %a%==n goto deny
 goto exit
 
 :excution
-print 파일 삭제를 위한 권한을 취득합니다.
+cls
+echo 파일 삭제를 위한 권한을 취득합니다.
+echo.
 timeout /t 1 < nul
 takeown.exe /f C:\Windows\system32\Macromed\Flash /R /D Y
 takeown.exe /f C:\Windows\SysWOW64\Macromed\Flash /R /D Y
@@ -23,12 +25,11 @@ takeown.exe /f C:"%appdata%\Adobe\Flash Player" /R /D Y
 takeown.exe /f C:"%appdata%\Macromedia\Flash Player" /R /D Y
 timeout /t 1 <nul
 
-print 권한을 취득한 파일을 삭제합니다.
+echo.
+echo 권한을 취득한 파일을 삭제합니다.
+echo.
 timeout /t 1 <nul
 del /S /Q "C:\Windows\system32\Macromed\Flash" * "C:\Windows\SysWOW64\Macromed\Flash" * "C:"%appdata%\Adobe\Flash Player"" * "C:"%appdata%\Macromedia\Flash Player""
-
-print 삭제가 완료 되었습니다. 아무 키나 누르시면 종료됩니다.(그냥 닫아도 되긴 합니다..)
+echo.
+echo 삭제가 완료 되었습니다. 아무 키나 누르시면 종료됩니다.(그냥 닫아도 되긴 합니다..)
 pause
-
-
-
