@@ -30,6 +30,8 @@ echo 권한을 취득한 파일을 삭제합니다.
 echo.
 timeout /t 1 <nul
 del /S /Q "C:\Windows\system32\Macromed\Flash" * "C:\Windows\SysWOW64\Macromed\Flash" * "C:"%appdata%\Adobe\Flash Player"" * "C:"%appdata%\Macromedia\Flash Player""
+
+:end
 echo.
 echo 삭제가 완료 되었습니다. 아무 키나 누르시면 종료됩니다.(그냥 닫아도 되긴 합니다..)
 pause
